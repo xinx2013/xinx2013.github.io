@@ -1,0 +1,10 @@
+- name: Xin Xin
+  photo: xin_xin.jpg
+  info: Assistant Professor, since Aug. 2023
+  email: xin.xin@ucf.edu
+  website: /advisor.html
+  description: "His research interests primarily lie in the field of computer architecture with a focus on memory subsystems, e.g., main memory performance/power/reliability, processing-in-memory (PIM)/near-data-processing (NDP), hybrid DRAM-NVM system, and memory-based accelerators."
+  # number_educ: 3
+  # education1: Ph.D. in ECE, University of Pittsburgh, 2023
+  # education2: M.E. in EE, Tsinghua University, 2016
+  # education3: B.S. in EE, Lanzhou University, 2013

@@ -1,0 +1,19 @@
+- title: "HBM-CASO"
+  description: "A Coordinated Approach to HBM System-Level and On-Die ECC"
+  venue: "ISCA 2026"
+  image: highlight_placeholder.png
+
+- title: "ReliaFHE"
+  description: "Resilient Design for Fully Homomorphic Encryption Accelerators"
+  venue: "ASPLOS 2026"
+  image: highlight_placeholder.png
+
+- title: "ASPA"
+  description: "Reassigning DDR5 Parity Bandwidth"
+  venue: "HPCA 2026"
+  image: highlight_placeholder.png
+
+- title: "SCREME"
+  description: "A Scalable Framework for Resilient Memory Design"
+  venue: "PACT 2025"
+  image: highlight_placeholder.png
