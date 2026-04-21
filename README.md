@@ -1,4 +1,4 @@
-# XX-Lab Homepage
+# MemArch-Lab Homepage
 
 Lab homepage built with the [Allan Lab](https://github.com/mpa139/allanlab) Jekyll theme.
 

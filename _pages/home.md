@@ -1,7 +1,7 @@
 ---
-title: "XX-Lab - Home"
+title: "MemArch-Lab - Home"
 layout: homelay
-excerpt: "XX-Lab at University of Central Florida"
+excerpt: "MemArch-Lab at University of Central Florida"
 sitemap: false
 permalink: /
 ---

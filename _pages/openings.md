@@ -1,5 +1,5 @@
 ---
-title: "XX-Lab - Openings"
+title: "MemArch-Lab - Openings"
 layout: textlay
 excerpt: "Openings"
 sitemap: false

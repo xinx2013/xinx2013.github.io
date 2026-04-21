@@ -1,4 +1,4 @@
-## Welcome to XX-Lab!
+## Welcome to MemArch-Lab!
 
 **Dr. Xin Xin** is a Tenure-Track Assistant Professor in the Department of Electrical and Computer Engineering at the [University of Central Florida](https://www.ucf.edu/) (since Aug. 2023). He received his Ph.D. in Electrical and Computer Engineering from the [University of Pittsburgh](https://www.pitt.edu/) in 2023 (Advisor: Jun Yang), his M.E. from [Tsinghua University](https://www.tsinghua.edu.cn/) in 2016, and his B.S. from [Lanzhou University](https://www.lzu.edu.cn/) in 2013.
 

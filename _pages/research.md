@@ -1,7 +1,7 @@
 ---
-title: "XX-Lab - Research"
+title: "MemArch-Lab - Research"
 layout: textlay
-excerpt: "XX-Lab -- Research"
+excerpt: "MemArch-Lab -- Research"
 sitemap: false
 permalink: /research/
 ---

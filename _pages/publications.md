@@ -1,7 +1,7 @@
 ---
-title: "XX-Lab - Publications"
+title: "MemArch-Lab - Publications"
 layout: gridlay
-excerpt: "XX-Lab -- Publications."
+excerpt: "MemArch-Lab -- Publications."
 sitemap: false
 permalink: /publications/
 ---
