@@ -15,8 +15,8 @@ His research interests primarily lie in the field of **computer architecture** w
 <div style="width:100%; height:120px; display:flex; align-items:center; justify-content:center; background:#f9f9f9; margin-bottom:8px;">
 <img src="{{ site.baseurl }}/images/highlights/{{ item.image }}" style="max-width:100%; max-height:120px; object-fit:contain;" />
 </div>
-<h5 style="margin:0 0 4px;"><strong>{{ item.title }}</strong> <small>({{ item.venue }})</small>{% if item.paper %} <a href="{{ item.paper }}" target="_blank" rel="noopener" style="font-size:12px;">[paper]</a>{% endif %}{% if item.slide %} <a href="{{ item.slide }}" target="_blank" rel="noopener" style="font-size:12px;">[slide]</a>{% endif %}</h5>
-<p style="font-size:12px; margin:0;">{{ item.description }}</p>
+<p style="margin:0 0 4px;"><strong>{{ item.title }}</strong> <small>({{ item.venue }})</small>{% if item.paper %} <a href="{{ item.paper }}" target="_blank" rel="noopener">[paper]</a>{% endif %}{% if item.slide %} <a href="{{ item.slide }}" target="_blank" rel="noopener">[slide]</a>{% endif %}</p>
+<p class="small" style="margin:0;">{{ item.description }}</p>
 </div>
 </div>
 {% endfor %}

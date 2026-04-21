@@ -24,7 +24,7 @@ Jump to [staff](#staff), [students](#students).
     <h4 style="margin-top:0;">{{ member.name }}</h4>
     <i>{{ member.info }}</i>
     {% if member.description and member.description != "" %}
-    <p style="margin-top:5px; font-size:13px; margin-bottom:0;">{{ member.description }}</p>
+    <p class="small" style="margin-top:5px; margin-bottom:0;">{{ member.description }}</p>
     {% endif %}
   </div>
 </div>
@@ -47,7 +47,7 @@ Jump to [staff](#staff), [students](#students).
     <h4 style="margin-top:0;">{{ member.name }}</h4>
     <i>{{ member.info }}</i>
     {% if member.description and member.description != "" %}
-    <p style="margin-top:5px; font-size:13px; margin-bottom:0;">{{ member.description }}</p>
+    <p class="small" style="margin-top:5px; margin-bottom:0;">{{ member.description }}</p>
     {% endif %}
   </div>
 </div>

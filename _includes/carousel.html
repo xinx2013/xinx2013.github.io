@@ -1,0 +1,29 @@
+<div id="highlight-carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+  <ol class="carousel-indicators">
+    {% for item in site.data.highlights %}
+    <li data-target="#highlight-carousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+    {% endfor %}
+  </ol>
+  <div class="carousel-inner">
+    {% for item in site.data.highlights %}
+    <div class="item {% if forloop.first %}active{% endif %}">
+      <div style="display:flex; align-items:center; justify-content:center; background:#f5f5f5; height:360px;">
+        <img src="{{ site.baseurl }}/images/highlights/{{ item.image }}" style="max-width:90%; max-height:336px; object-fit:contain;" />
+      </div>
+      <div class="carousel-caption" style="background:rgba(0,0,0,0.6); bottom:0; left:0; right:0; padding:10px 15px; text-align:left;">
+        <p style="margin:0 0 4px; color:#fff;"><strong>{{ item.title }}</strong> <small style="color:#ccc;">({{ item.venue }})</small>
+          {% if item.paper %} <a href="{{ item.paper }}" target="_blank" rel="noopener" style="color:#8cf;">[paper]</a>{% endif %}
+          {% if item.slide %} <a href="{{ item.slide }}" target="_blank" rel="noopener" style="color:#8cf;">[slide]</a>{% endif %}
+        </p>
+        <p class="small" style="margin:0; color:#eee;">{{ item.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <a class="left carousel-control" href="#highlight-carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#highlight-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
