@@ -1,0 +1,50 @@
+- date: 2026
+  headline: "Paper accepted at <strong>ISCA 2026</strong>: HBM-CASO: A Coordinated Approach to HBM System-Level and On-Die ECC"
+
+- date: 2026
+  headline: "Paper accepted at <strong>ISCA 2026</strong>: LOONG: Utilizing Long-Stride Reprogram to Enhance the Performance of SSDs"
+
+- date: 2026
+  headline: "Paper accepted at <strong>ICS 2026</strong>: DANMP: Accelerating Multi-Scale Deformable Attention Using Near-Memory-Processing Architecture"
+
+- date: 2026
+  headline: "Paper accepted at <strong>ASPLOS 2026</strong>: ReliaFHE: Resilient Design for Fully Homomorphic Encryption Accelerators"
+
+- date: 2026
+  headline: "Paper accepted at <strong>HPCA 2026</strong>: ASPA: Reassigning DDR5 Parity Bandwidth"
+
+- date: 2026
+  headline: "Paper accepted at <strong>PoPETS 2026</strong>: SoK: Can Fully Homomorphic Encryption Support General AI Computation?"
+
+- date: 2025
+  headline: "Paper accepted at <strong>PACT 2025</strong>: SCREME: A Scalable Framework for Resilient Memory Design"
+
+- date: 2025
+  headline: "Paper accepted at <strong>ICCD 2025</strong>: PIM-SUM: Fast and Reliable In-Memory Summation for Recommendation Systems"
+
+- date: 2025
+  headline: "Paper accepted at <strong>ISCA 2025</strong>: LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning"
+
+- date: 2024
+  headline: "Paper accepted at <strong>DAC 2024</strong>: Addition is Most You Need: Efficient Floating-Point SRAM Compute-in-Memory by Harnessing Mantissa Addition"
+
+- date: 2023
+  headline: "Paper accepted at <strong>MICRO 2023</strong>: Uncore Encore: Covert Channels Exploiting Uncore Frequency Scaling"
+
+- date: 2022
+  headline: "Paper accepted at <strong>MICRO 2022</strong>: Leaky Way: A Conflict-Based Cache Covert Channel Bypassing Set Associativity"
+
+- date: 2022
+  headline: "Paper accepted at <strong>DAC 2022</strong>: Architecting DDR5 DRAM Caches for Non-Volatile Memory Systems"
+
+- date: 2021
+  headline: "Paper accepted at <strong>MICRO 2021</strong>: SAM: Accelerating Strided Memory Accesses"
+
+- date: 2021
+  headline: "Paper accepted at <strong>MICRO 2021</strong>: ParaBit: Processing Parallel Bitwise Operations in NAND Flash Memory based SSDs"
+
+- date: 2020
+  headline: "Paper accepted at <strong>DAC 2020</strong>: Reducing DRAM Access Latency via Helper Rows"
+
+- date: 2020
+  headline: "Paper accepted at <strong>HPCA 2020</strong>: ELP2IM: Efficient and Low Power Bitwise Operation Processing in DRAM"
