@@ -20,12 +20,16 @@
   authors: Fan Li, Mayank Kumar, Ruizhi Zhu, Mengxin Zheng, Qian Lou, and Xin Xin
   link:
     display: ASPLOS 2026
+  paper: https://dl.acm.org/doi/10.1145/3779212.3790211
+  slide: https://stardust-lf.github.io/files/ReliaFHE.pdf
   selected: 1
 
 - title: "ASPA: Reassigning DDR5 Parity Bandwidth"
   authors: Fan Li, Qiufeng Li, Yanan Guo, Weidong Cao, and Xin Xin
   link:
     display: HPCA 2026
+  paper: https://ieeexplore.ieee.org/document/11408447
+  slide: https://stardust-lf.github.io/files/ASPA.pdf
   selected: 1
 
 - title: "SoK: Can Fully Homomorphic Encryption Support General AI Computation? A Functional and Cost Analysis"
@@ -38,12 +42,16 @@
   authors: Fan Li, Mimi Xie, Yanan Guo, Huize Li, and Xin Xin
   link:
     display: PACT 2025
+  paper: https://ieeexplore.ieee.org/document/11282510
+  slide: https://stardust-lf.github.io/files/SCREME.pdf
   selected: 1
 
 - title: "PIM-SUM: Fast and Reliable In-Memory Summation for Recommendation Systems"
   authors: Fan Li, Ruizhi Zhu, Huize Li, Di Wu, and Xin Xin
   link:
     display: ICCD 2025
+  paper: https://ieeexplore.ieee.org/document/11311106
+  slide: https://stardust-lf.github.io/files/PIM-SUM.pdf
   selected: 1
 
 - title: "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning"

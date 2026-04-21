@@ -4,8 +4,6 @@
 
 His research interests primarily lie in the field of **computer architecture** with a focus on **memory subsystems**, e.g., main memory performance/power/reliability, processing-in-memory (PIM)/near-data-processing (NDP), hybrid DRAM-NVM system, and memory-based accelerators.
 
-[CV]({{ site.baseurl }}/CV-Xin.pdf) | [Email](mailto:xin.xin@ucf.edu)
-
 ---
 
 ### Research Highlights
@@ -14,8 +12,10 @@ His research interests primarily lie in the field of **computer architecture** w
 {% for item in site.data.highlights %}
 <div class="col-sm-6" style="margin-bottom:15px;">
 <div class="well" style="min-height:160px; padding:10px;">
-<img src="{{ site.baseurl }}/images/highlights/{{ item.image }}" style="width:100%; max-height:80px; object-fit:cover; margin-bottom:8px;" />
-<h5 style="margin:0 0 4px;"><strong>{{ item.title }}</strong> <small>({{ item.venue }})</small></h5>
+<div style="width:100%; height:120px; display:flex; align-items:center; justify-content:center; background:#f9f9f9; margin-bottom:8px;">
+<img src="{{ site.baseurl }}/images/highlights/{{ item.image }}" style="max-width:100%; max-height:120px; object-fit:contain;" />
+</div>
+<h5 style="margin:0 0 4px;"><strong>{{ item.title }}</strong> <small>({{ item.venue }})</small>{% if item.paper %} <a href="{{ item.paper }}" target="_blank" rel="noopener" style="font-size:12px;">[paper]</a>{% endif %}{% if item.slide %} <a href="{{ item.slide }}" target="_blank" rel="noopener" style="font-size:12px;">[slide]</a>{% endif %}</h5>
 <p style="font-size:12px; margin:0;">{{ item.description }}</p>
 </div>
 </div>

@@ -1,19 +1,25 @@
 - title: "HBM-CASO"
   description: "A Coordinated Approach to HBM System-Level and On-Die ECC"
   venue: "ISCA 2026"
-  image: highlight_placeholder.png
+  image: HBM-CASO.png
 
 - title: "ReliaFHE"
   description: "Resilient Design for Fully Homomorphic Encryption Accelerators"
   venue: "ASPLOS 2026"
-  image: highlight_placeholder.png
+  image: ReliaFHE.jpg
+  paper: https://dl.acm.org/doi/10.1145/3779212.3790211
+  slide: https://stardust-lf.github.io/files/ReliaFHE.pdf
 
 - title: "ASPA"
   description: "Reassigning DDR5 Parity Bandwidth"
   venue: "HPCA 2026"
-  image: highlight_placeholder.png
+  image: ASPA.png
+  paper: https://ieeexplore.ieee.org/document/11408447
+  slide: https://stardust-lf.github.io/files/ASPA.pdf
 
 - title: "SCREME"
   description: "A Scalable Framework for Resilient Memory Design"
   venue: "PACT 2025"
-  image: highlight_placeholder.png
+  image: SCREME.jpg
+  paper: https://ieeexplore.ieee.org/document/11282510
+  slide: https://stardust-lf.github.io/files/SCREME.pdf
