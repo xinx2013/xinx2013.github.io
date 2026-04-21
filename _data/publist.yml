@@ -2,106 +2,100 @@
   authors: Ruizhi Zhu, Yanan Guo, Huize Li, Weidong Cao, Qian Lou, and Xin Xin
   link:
     display: ISCA 2026
-  highlight: 1
-  description: ""
+  selected: 1
 
 - title: "LOONG: Utilizing Long-Stride Reprogram to Enhance the Performance of SSDs"
   authors: Congming Gao, Jiancong Zheng, Xufeng Yang, Qiao Li, Jian Chen, Tianyu Ren, Zheng Wan, Yina Lv, Xin Xin, Min Ye, Chun Jason Xue, and Jiwu Shu
   link:
     display: ISCA 2026
-  highlight: 0
+  selected: 0
 
 - title: "DANMP: Accelerating Multi-Scale Deformable Attention Using Near-Memory-Processing Architecture"
   authors: Huize Li, Qinggang Wang, Bin Gao, Dan Chen, Yu Huang, and Xin Xin
   link:
     display: ICS 2026
-  highlight: 0
+  selected: 1
 
 - title: "ReliaFHE: Resilient Design for Fully Homomorphic Encryption Accelerators"
   authors: Fan Li, Mayank Kumar, Ruizhi Zhu, Mengxin Zheng, Qian Lou, and Xin Xin
   link:
     display: ASPLOS 2026
-  highlight: 1
-  description: ""
+  selected: 1
 
 - title: "ASPA: Reassigning DDR5 Parity Bandwidth"
   authors: Fan Li, Qiufeng Li, Yanan Guo, Weidong Cao, and Xin Xin
   link:
     display: HPCA 2026
-  highlight: 1
-  description: ""
+  selected: 1
 
 - title: "SoK: Can Fully Homomorphic Encryption Support General AI Computation? A Functional and Cost Analysis"
   authors: Jiaqi Xue, Xin Xin, Wei Zhang, Mengxin Zheng, Qianqian Song, Minxuan Zhou, Yushun Dong, Dongjie Wang, Xun Chen, Jiafeng Xie, Liqiang Wang, David Mohaisen, Hongyi Wu, and Qian Lou
   link:
     display: PoPETS 2026
-  highlight: 0
+  selected: 0
 
 - title: "SCREME: A Scalable Framework for Resilient Memory Design"
   authors: Fan Li, Mimi Xie, Yanan Guo, Huize Li, and Xin Xin
   link:
     display: PACT 2025
-  highlight: 0
+  selected: 1
 
 - title: "PIM-SUM: Fast and Reliable In-Memory Summation for Recommendation Systems"
   authors: Fan Li, Ruizhi Zhu, Huize Li, Di Wu, and Xin Xin
   link:
     display: ICCD 2025
-  highlight: 0
+  selected: 1
 
 - title: "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning"
   authors: Liang Liu, Sadra Rahimi Kari, Xin Xin, Nathan Youngblood, Youtao Zhang, and Jun Yang
   link:
     display: ISCA 2025
-  highlight: 1
-  description: ""
+  selected: 0
 
 - title: "Addition is Most You Need: Efficient Floating-Point SRAM Compute-in-Memory by Harnessing Mantissa Addition"
   authors: Weidong Cao, Jian Gao, Xin Xin, and Xuan Zhang
   link:
     display: DAC 2024
-  highlight: 0
+  selected: 0
 
 - title: "Uncore Encore: Covert Channels Exploiting Uncore Frequency Scaling"
   authors: Yanan Guo, Dingyuan Cao, Xin Xin, Youtao Zhang, and Jun Yang
   link:
     display: MICRO 2023
-  highlight: 0
+  selected: 0
 
 - title: "Leaky Way: A Conflict-Based Cache Covert Channel Bypassing Set Associativity"
   authors: Yanan Guo, Xin Xin, Youtao Zhang, and Jun Yang
   link:
     display: MICRO 2022
-  highlight: 0
+  selected: 0
 
 - title: "Architecting DDR5 DRAM Caches for Non-Volatile Memory Systems"
   authors: Xin Xin, Wanyi Zhu, and Li Zhao
   link:
     display: DAC 2022
-  highlight: 0
+  selected: 0
 
 - title: "SAM: Accelerating Strided Memory Accesses"
   authors: Xin Xin, Yanan Guo, Youtao Zhang, and Jun Yang
   link:
     display: MICRO 2021
-  highlight: 1
-  description: ""
+  selected: 0
 
 - title: "ParaBit: Processing Parallel Bitwise Operations in NAND Flash Memory based SSDs"
   authors: Congming Gao, Xin Xin, Youyou Lu, Youtao Zhang, Jun Yang, and Jiwu Shu
   link:
     display: MICRO 2021
-  highlight: 0
+  selected: 0
 
 - title: "Reducing DRAM Access Latency via Helper Rows"
   authors: Xin Xin, Youtao Zhang, and Jun Yang
   link:
     display: DAC 2020
-  highlight: 0
+  selected: 0
 
 - title: "ELP2IM: Efficient and Low Power Bitwise Operation Processing in DRAM"
   authors: Xin Xin, Youtao Zhang, and Jun Yang
   link:
     display: HPCA 2020
-  highlight: 1
-  description: ""
+  selected: 0

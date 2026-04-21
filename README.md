@@ -12,8 +12,11 @@ Lab homepage built with the [Allan Lab](https://github.com/mpa139/allanlab) Jeky
 | News | `_data/news.yml` |
 | Staff members | `_data/team_members.yml` |
 | Students | `_data/students.yml` |
+| Research highlights | `_data/highlights.yml` |
 
-Member photos go in `images/teampic/`; reference the filename in the yml file.
+Member photos go in `photos/`; reference the filename in the yml file. Photos are auto-cropped to a square from the top.
+
+Highlight images go in `images/highlights/`; reference the filename in `_data/highlights.yml`.
 
 ### Publication format
 

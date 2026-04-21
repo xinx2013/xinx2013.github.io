@@ -1,9 +1,15 @@
-- name: TBD
-  photo: placeholder.jpg
-  info: Ph.D. Student
+- name: Ruizhi Zhu
+  photo: ruizhi_zhu.jpg
+  info: Ph.D. Student 2025-
+  mail: ruizhi.zhu@ucf.edu
+  website:
+  description: "Memory, ECC <br> ruizhi.zhu@ucf.edu"
   number_educ: 0
 
-- name: TBD
-  photo: placeholder.jpg
-  info: Ph.D. Student
+- name: Fan Li
+  photo: fan_li.jpeg
+  info: Ph.D. Student 2025-
+  mail: fan.li@ucf.edu
+  website:
+  description: "Reliable Computing, HPC <br> fan.li@ucf.edu"
   number_educ: 0

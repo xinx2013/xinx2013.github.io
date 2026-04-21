@@ -10,106 +10,52 @@ permalink: /team/
 
 Jump to [staff](#staff), [students](#students).
 
-## Staff
+<div markdown="0">
+
+<h2 id="staff">Staff</h2>
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
-
 {% assign even_odd = number_printed | modulo: 2 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-6 clearfix">
-  <img src="{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }}</i>
-  <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  <li> {{ member.education3 | markdownify}} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  <li> {{ member.education3 | markdownify}} </li>
-  <li> {{ member.education4 | markdownify}} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  <li> {{ member.education3 | markdownify}} </li>
-  <li> {{ member.education4 | markdownify}} </li>
-  <li> {{ member.education5 | markdownify}} </li>
-  {% endif %}
-
-  </ul>
+{% if even_odd == 0 %}<div class="row">{% endif %}
+<div class="col-sm-6">
+<div class="member-card{% if member.website %} clickable{% endif %}" {% if member.website %}onclick="window.location='{{ member.website }}'" style="cursor:pointer;"{% endif %}>
+  <img src="{{ site.baseurl }}/photos/{{ member.photo }}" style="width:120px; height:120px; object-fit:cover; object-position:top; margin-right:15px; border-radius:4px;" />
+  <div class="member-info">
+    <h4 style="margin-top:0;">{{ member.name }}</h4>
+    <i>{{ member.info }}</i>
+    {% if member.description and member.description != "" %}
+    <p style="margin-top:5px; font-size:13px; margin-bottom:0;">{{ member.description }}</p>
+    {% endif %}
+  </div>
 </div>
-
+</div>
 {% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
+{% if even_odd == 1 %}</div>{% endif %}
 {% endfor %}
-
 {% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
+{% if even_odd == 1 %}</div>{% endif %}
 
-
-## Students
+<h2 id="students">Students</h2>
 {% assign number_printed = 0 %}
 {% for member in site.data.students %}
-
 {% assign even_odd = number_printed | modulo: 2 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-6 clearfix">
-  <img src="{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }}</i>
-  <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  {% endif %}
-
-  </ul>
+{% if even_odd == 0 %}<div class="row">{% endif %}
+<div class="col-sm-6">
+<div class="member-card{% if member.website %} clickable{% endif %}" {% if member.website %}onclick="window.location='{{ member.website }}'" style="cursor:pointer;"{% endif %}>
+  <img src="{{ site.baseurl }}/photos/{{ member.photo }}" style="width:120px; height:120px; object-fit:cover; object-position:top; margin-right:15px; border-radius:4px;" />
+  <div class="member-info">
+    <h4 style="margin-top:0;">{{ member.name }}</h4>
+    <i>{{ member.info }}</i>
+    {% if member.description and member.description != "" %}
+    <p style="margin-top:5px; font-size:13px; margin-bottom:0;">{{ member.description }}</p>
+    {% endif %}
+  </div>
 </div>
-
+</div>
 {% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
+{% if even_odd == 1 %}</div>{% endif %}
 {% endfor %}
-
 {% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
+{% if even_odd == 1 %}</div>{% endif %}
+
 </div>
-{% endif %}
