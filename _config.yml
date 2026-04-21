@@ -3,8 +3,8 @@ title: "XX-Lab"
 email: "xin.xin@ucf.edu"
 description: >
   XX-Lab at University of Central Florida.
-baseurl: "/lab-homepage"
-url: "https://stardust-lf.github.io"
+baseurl: ""
+url: "https://xinx2013.github.io"
 
 include:
   - .htaccess
