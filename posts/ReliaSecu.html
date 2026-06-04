@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>teaching – MemArch Lab</title>
+<title>Featured Project II – MemArch Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Rsearch1</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts/ReliaSecu.html"> 
+    <a class="nav-link active" href="../posts/ReliaSecu.html" aria-current="page"> 
 <span class="menu-text">Rsearch2</span></a>
   </li>  
   <li class="nav-item">
@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publication</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../posts/Teaching.html" aria-current="page"> 
+    <a class="nav-link" href="../posts/Teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
@@ -138,43 +138,91 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#security-may-need-more-reliability" id="toc-security-may-need-more-reliability" class="nav-link active" data-scroll-target="#security-may-need-more-reliability">Security may Need More Reliability</a>
+  <ul>
+  <li><a href="#contribution" id="toc-contribution" class="nav-link" data-scroll-target="#contribution">Contribution</a></li>
+  <li><a href="#limitation" id="toc-limitation" class="nav-link" data-scroll-target="#limitation">Limitation</a></li>
+  <li><a href="#takeaway" id="toc-takeaway" class="nav-link" data-scroll-target="#takeaway">Takeaway</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<h2 style="text-align: center;" class="anchored">
-Teaching
-</h2>
-<div style="text-align: left;">
-<strong>EEL 5706 Resilient Computer System Design</strong><br>
-
-<div style="padding-left: 2rem;">
-<p>Graduate Level, ECE Department at UCF,<br>
-Fall 2024, Fall 2025, Fall 2026,<br>
-<em>This course introduces advanced concepts in hardware and software fault tolerance, teaching students how to design computing systems that maintain reliable operation despite component failures, environmental interference, or operational anomalies, including error-handling techniques such as CRC for data transfer, ECC for storage, and ABFT for computation.</em></p>
-</div>
-<strong>EEL 4781 Computer Communication Networks</strong><br>
-
-<div style="padding-left: 2rem;">
-<p>Undergraduate Level, ECE Department at UCF,<br>
-Spring 2024, Spring 2025, Spring 2026,<br>
-<em>This course introduces the foundational principles and architectural structures of network communication, teaching students how to analyze data transmission systems from application socket programming and transport-layer reliability control down through network routing algorithms, link-layer framing, and physical signal encoding.</em></p>
-</div>
-<strong>EEL 6938 ST: Advanced Memory Architecture for Future Computing</strong><br>
-
-<div style="padding-left: 2rem;">
-<p>Graduate Level, ECE Department at UCF,<br>
-Fall 2026,<br>
-<em>This course introduces the critical performance challenges of the post-Moore’s Law era, teaching students how to analyze and design advanced memory subsystems from application-level memory management down through high-bandwidth caching hierarchies, emergent non-volatile memory devices, and hardware-centric processing-in-memory (PIM) architectures.</em></p>
-</div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Featured Project II</h1>
+<p class="subtitle lead">3 min read.</p>
 </div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="hero">
+<div class="hero-grid">
+<div>
+<div class="big-question">
+<p>Reliability <em>vs</em> Security</p>
+</div>
+<div class="kicker">
+<p>Privacy-Preserving:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Hatching –&gt; Computing</p>
+</div>
+<div class="hero-copy">
+<p>Ostriches often seek concealed sites for incubation rather than exposed open ground (quite intuitive🙂). What is more interesting, however, is that multiple ostriches may concentrate their eggs in a shared nesting site, allowing them to more efficiently use this carefully prepared and protected nest. Yet this strategy introduces a <span style="color: var(--purple); font-weight: 700;">new risk</span>.: any failure during incubation could affect more eggs.</p>
+</div>
+</div>
+<div>
+<p><img src="../images/resilience-security.png" class="img-fluid" alt="ostrich hatch"></p>
+</div>
+</div>
+</div>
+<section id="security-may-need-more-reliability" class="level2">
+<h2 class="anchored" data-anchor-id="security-may-need-more-reliability">Security may Need More Reliability</h2>
+<p>Fully Homomorphic Encryption, or FHE, is a fascinating technique. It allows data to be processed while it remains encrypted, without decrypting it first. This is often called privacy-preserving computation. This is similar to the ostrich hatching example: hatching eggs is like processing data. To improve efficiency, FHE often packs many data items together. But this also introduces a similar risk: faults during FHE computation can be greatly amplified. For example, some AI models that are normally fault-tolerant may become unable to tolerate even a single-bit error when running under FHE.</p>
+<section id="contribution" class="level3">
+<h3 class="anchored" data-anchor-id="contribution">Contribution</h3>
+<p>Existing FHE accelerators often overlook a simple fact: hardware cannot compute everything perfectly. More seriously, as mentioned above, FHE can make applications more fault-sensitive because of its encryption and data-packing schemes. This creates a stronger need for reliability.</p>
+<p>We propose a resilient framework that protects both storage and computation in FHE accelerators. One key idea is to use lightweight checksum-based schemes to build efficient codewords, taking advantage of the fact that FHE data is organized as very large ciphertext polynomials. In theory, this framework can improve reliability by several orders of magnitude with only about 1% overhead.</p>
+<div style="text-align: center;">
+<p><img src="../images/reliaFHE.png" class="img-fluid" style="width:70.0%" alt="ASPA design"></p>
+</div>
+</section>
+<section id="limitation" class="level3">
+<h3 class="anchored" data-anchor-id="limitation">Limitation</h3>
+<ul>
+<li>No design is perfect!</li>
+<li>This design is kernel-specific. It does not provide a uniform solution for all kernels. This also makes some design details harder to understand.</li>
+<li>This design currently focuses on FHE. We are exploring additional solutions that can support broader secure computing systems.</li>
+</ul>
+</section>
+<section id="takeaway" class="level3">
+<h3 class="anchored" data-anchor-id="takeaway">Takeaway</h3>
+<div class="insight">
+Traditional reliability design often focuses on storage: keeping data safe while it is stored or transferred. But this is not enough when the application itself becomes more error-sensitive. Our solution is to extend protection into computation.
+</div>
+<p><br></p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

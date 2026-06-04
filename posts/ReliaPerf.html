@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>teaching – MemArch Lab</title>
+<title>Featured Project I – MemArch Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts/ReliaPerf.html"> 
+    <a class="nav-link active" href="../posts/ReliaPerf.html" aria-current="page"> 
 <span class="menu-text">Rsearch1</span></a>
   </li>  
   <li class="nav-item">
@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Publication</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../posts/Teaching.html" aria-current="page"> 
+    <a class="nav-link" href="../posts/Teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
@@ -138,43 +138,92 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#reliability-can-benefit-performance" id="toc-reliability-can-benefit-performance" class="nav-link active" data-scroll-target="#reliability-can-benefit-performance">Reliability can Benefit Performance</a>
+  <ul>
+  <li><a href="#contribution" id="toc-contribution" class="nav-link" data-scroll-target="#contribution">Contribution</a></li>
+  <li><a href="#limitation" id="toc-limitation" class="nav-link" data-scroll-target="#limitation">Limitation</a></li>
+  <li><a href="#takeaway" id="toc-takeaway" class="nav-link" data-scroll-target="#takeaway">Takeaway</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<h2 style="text-align: center;" class="anchored">
-Teaching
-</h2>
-<div style="text-align: left;">
-<strong>EEL 5706 Resilient Computer System Design</strong><br>
-
-<div style="padding-left: 2rem;">
-<p>Graduate Level, ECE Department at UCF,<br>
-Fall 2024, Fall 2025, Fall 2026,<br>
-<em>This course introduces advanced concepts in hardware and software fault tolerance, teaching students how to design computing systems that maintain reliable operation despite component failures, environmental interference, or operational anomalies, including error-handling techniques such as CRC for data transfer, ECC for storage, and ABFT for computation.</em></p>
-</div>
-<strong>EEL 4781 Computer Communication Networks</strong><br>
-
-<div style="padding-left: 2rem;">
-<p>Undergraduate Level, ECE Department at UCF,<br>
-Spring 2024, Spring 2025, Spring 2026,<br>
-<em>This course introduces the foundational principles and architectural structures of network communication, teaching students how to analyze data transmission systems from application socket programming and transport-layer reliability control down through network routing algorithms, link-layer framing, and physical signal encoding.</em></p>
-</div>
-<strong>EEL 6938 ST: Advanced Memory Architecture for Future Computing</strong><br>
-
-<div style="padding-left: 2rem;">
-<p>Graduate Level, ECE Department at UCF,<br>
-Fall 2026,<br>
-<em>This course introduces the critical performance challenges of the post-Moore’s Law era, teaching students how to analyze and design advanced memory subsystems from application-level memory management down through high-bandwidth caching hierarchies, emergent non-volatile memory devices, and hardware-centric processing-in-memory (PIM) architectures.</em></p>
-</div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Featured Project I</h1>
+<p class="subtitle lead">3 min read.</p>
 </div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="hero">
+<div class="hero-grid">
+<div>
+<div class="big-question">
+<p>Reliability <em>vs</em> Perform.</p>
+</div>
+<div class="kicker">
+<p>Support Ostrich –&gt; Parity data<br>
+Athlete Ostrich –&gt; Regular data</p>
+</div>
+<div class="hero-copy">
+<p>The ostrich is awesome – among the fastest animals in the world. The image shows an <em>ostrich race</em> where a support ostrich is there to keep runners safe. But if the track has only a few lanes, letting the support ostrich occupy an entire lane would be <span style="color: var(--purple); font-weight: 700;">wasteful</span>.</p>
+</div>
+</div>
+<div>
+<p><img src="../images/resilience-performance.png" class="img-fluid" alt="ostrich race"></p>
+</div>
+</div>
+</div>
+<section id="reliability-can-benefit-performance" class="level2">
+<h2 class="anchored" data-anchor-id="reliability-can-benefit-performance">Reliability can Benefit Performance</h2>
+<p>Memory and processors talk to each other through a channel. The speed of this channel (bandwidth) largely determines memory performance. To make memory reliable, modern systems also send extra protection information, called parity or ECC data. This is analogous to the ostrich race example: the track lanes are like the memory channel, and the support ostrich is like parity data. The same kind of issue appears in memory systems: The channel is already limited, but some of its space is used for parity instead of regular data. In DDR5, this parity can add about 25% bandwidth overhead, a high cost!</p>
+<section id="contribution" class="level3">
+<h3 class="anchored" data-anchor-id="contribution">Contribution</h3>
+<p>Most recent memory technologies, such as DDR5, HBM3, and memory-centric accelerators, focus on increasing total bandwidth. But another important question is often overlooked: are we using the available bandwidth efficiently?</p>
+<p>Our work starts from this question. Instead of treating reliability as something that only consumes resources, we ask whether reliability-related bandwidth can be reclaimed and used more wisely. One key idea is to reorganize parity in a more compact manner. By reducing the bandwidth needed for parity, we can free up part of the channel for regular data transfer. In theory, this can improve bandwidth utilization by up to 1.25×, while still maintaining reliability and adding negligible hardware overhead.</p>
+<div style="text-align: center;">
+<p><img src="../images/aspa.png" class="img-fluid" style="width:80.0%" alt="ASPA design"></p>
+</div>
+</section>
+<section id="limitation" class="level3">
+<h3 class="anchored" data-anchor-id="limitation">Limitation</h3>
+<ul>
+<li>No design is perfect!</li>
+<li>This design works best for sequential memory accesses (e.g., reading a 4KB memory page). But it is less suitable for highly random memory accesses.</li>
+<li>This design also works best for DRAM chips with narrower I/O widths. But for other chip types, it may require more hardware changes.</li>
+<li>We are currently exploring additional solutions that can support broader memory systems and access patterns.</li>
+</ul>
+</section>
+<section id="takeaway" class="level3">
+<h3 class="anchored" data-anchor-id="takeaway">Takeaway</h3>
+<div class="insight">
+Reliability is often viewed as a cost: we spend extra resources to make systems safer. But reliability can also be a source of opportunity. Our solution is to repurpose reliability resources for performance improvement.
+</div>
+<p><br></p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
